@@ -23,7 +23,7 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;color:#0f1
 .btn-outline{background:transparent;border:1px solid #e6e6ef;color:var(--muted)}
 .nav-toggle{display:none;background:transparent;border:0;font-size:20px}
 
-.hero{padding:84px 0 240px;min-height:520px;background-image: url('../images/bgimg.png');background-position: center right;background-repeat: no-repeat;background-size: cover;background-color:var(--bg);display:flex;align-items:center;position:relative;overflow:visible}
+.hero{padding:84px 0 240px;min-height:520px;background-image: url('../images/bluyel.png');background-position: center right;background-repeat: no-repeat;background-size: cover;background-color:var(--bg);display:flex;align-items:center;position:relative;overflow:visible}
 .hero .hero-inner{position:static;z-index:4;justify-content:flex-start}
 
 /* place hero-box touching the left browser edge */
@@ -215,10 +215,6 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;color:#0f1
   .section-title{font-size:22px}
   .slant-divider{height:160px;margin-top:-20px}
   .videos-grid{gap:16px}
-  /* constrain and center computers media to avoid horizontal overflow on phones */
-  .computers{padding:40px 0}
-  .computers-media{overflow:hidden;text-align:center}
-  .computers-image{display:block;margin:0 auto;max-width:220px;width:80vw;height:auto;box-sizing:border-box}
 }
 
 @media (max-width:360px){
@@ -228,7 +224,6 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;color:#0f1
   .hero-title{font-size:24px}
   .hero-sub{font-size:14px}
   .btn{padding:10px 12px}
-  .computers-image{max-width:200px;width:75vw}
 }
 
 /* small accessibility focus */
