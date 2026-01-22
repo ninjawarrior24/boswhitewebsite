@@ -203,7 +203,7 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;color:#0f1
   .brand-logo{height:28px}
   .nav-toggle{font-size:22px}
 
-  .hero{padding:48px 0 120px;min-height:360px;background-position:top right;background-size:180%}
+  .hero{padding:48px 0 120px;min-height:360px;background-position:top right;background-size:180%;background-image:url('../images/bluyel.png')}
   .hero-box{position:static;transform:none;margin:0 auto;padding:20px;width:100%}
   .hero-title{font-size:28px;margin-bottom:10px}
   .hero-sub{font-size:15px;margin-bottom:14px}
@@ -215,6 +215,9 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;color:#0f1
   .section-title{font-size:22px}
   .slant-divider{height:160px;margin-top:-20px}
   .videos-grid{gap:16px}
+  /* ensure mobile uses bluyel and constrain/center the computers image */
+  .computers-media{overflow:hidden;text-align:center}
+  .computers-image{display:block;margin:0 auto;max-width:180px;width:70vw;height:auto;border-radius:8px}
 }
 
 @media (max-width:360px){
@@ -224,6 +227,7 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;color:#0f1
   .hero-title{font-size:24px}
   .hero-sub{font-size:14px}
   .btn{padding:10px 12px}
+  .computers-image{max-width:160px;width:72vw}
 }
 
 /* small accessibility focus */
