@@ -55,7 +55,7 @@
 	<header class="nav">
 		<div class="container nav-inner">
 			<a class="brand" href="/">
-				<img src="images/beonelogo.webp" alt="BeOne Sports" class="brand-logo">
+				<img src="images/beonelogo.webp" alt="BeOne Sports" class="brand-logo" decoding="async">
 			</a>
 			<nav class="nav-links" id="navLinks">
 				<a href="#product">Product</a>
@@ -91,7 +91,7 @@
 
 				<div class="drake-media">
 					<div class="drake-image-wrap">
-						<img src="images/drakejump.png" alt="DrakeDive image" class="drake-image">
+						<img src="images/drakejump.png" alt="DrakeDive image" class="drake-image" loading="lazy" decoding="async">
 					</div>
 					<div class="drake-content">
 						<h3 class="drake-subtitle" aria-label="165+ Million">
@@ -123,7 +123,7 @@
 
 				<div class="computers-media">
 					<div class="webapp-wrap">
-						<img src="images/WebApp Landing.png" alt="Web app landing" class="webapplanding-image">
+						<img src="images/WebApp Landing.png" alt="Web app landing" class="webapplanding-image" loading="lazy" decoding="async">
 					</div>
 				</div>
 			</div>
@@ -134,7 +134,7 @@
 				<h2 class="section-title">A fully integrated athlete management system (AMS)</h2>
 				<p class="section-lead">Manage your organization’s coaches & athletes simply. Assign individual training outcomes remotely and generate club-level insights and performance trends.</p>
 				<div class="ams-media">
-					<img src="images/Runner.png" alt="AMS illustration" class="ams-image">
+					<img src="images/Runner.png" alt="AMS illustration" class="ams-image" loading="lazy" decoding="async">
 				</div>
 			</div>
 		</section>
@@ -162,10 +162,10 @@
 
 				<div class="videos-grid">
 					<div class="videos-media">
-						<img src="images/Runner.png" alt="Runner image" class="videos-image">
+						<img src="images/Runner.png" alt="Runner image" class="videos-image" loading="lazy" decoding="async">
 					</div>
 					<div class="videos-player">
-						<video class="video-player" controls preload="metadata">
+						<video class="video-player" controls preload="metadata" playsinline poster="/images/WebApp%20Landing.png">
 							<source src="videos/braodjump.mov" type="video/quicktime">
 							Your browser does not support the video tag.
 						</video>
@@ -173,10 +173,10 @@
 				</div>
 
 					<div class="video-logos">
-						<img src="images/football.png" alt="Football" class="logo">
-						<img src="images/basketball.png" alt="Basketball" class="logo">
-						<img src="images/soccer.png" alt="Soccer" class="logo">
-						<img src="images/baseball.png" alt="Baseball" class="logo">
+						<img src="images/football.png" alt="Football" class="logo" loading="lazy" decoding="async">
+						<img src="images/basketball.png" alt="Basketball" class="logo" loading="lazy" decoding="async">
+						<img src="images/soccer.png" alt="Soccer" class="logo" loading="lazy" decoding="async">
+						<img src="images/baseball.png" alt="Baseball" class="logo" loading="lazy" decoding="async">
 					</div>
 			</div>
 		</section>
@@ -188,11 +188,11 @@
 
 				<div class="gs-icons">
 					<div class="gs-icon">
-						<img src="images/athlete.png" alt="Athlete" class="gs-image">
+						<img src="images/athlete.png" alt="Athlete" class="gs-image" loading="lazy" decoding="async">
 						<p>Athletes</p>
 					</div>
 					<div class="gs-icon">
-						<img src="images/coach.png" alt="Coach" class="gs-image">
+						<img src="images/coach.png" alt="Coach" class="gs-image" loading="lazy" decoding="async">
 						<p>Coaches</p>
 					</div>
 				</div>
@@ -213,13 +213,13 @@
 				<h2 class="section-title">Take it from them...</h2>
 				<div class="carousel" data-autoplay="true" data-interval="4000">
 					<div class="carousel-track">
-						<div class="carousel-item"><img src="images/WebApp Landing.png" alt="slide 1"></div>
-						<div class="carousel-item"><img src="images/Runner.png" alt="slide 2"></div>
-						<div class="carousel-item"><img src="images/QBtogether.png" alt="slide 3"></div>
-						<div class="carousel-item"><img src="images/drakejump.png" alt="slide 4"></div>
-						<div class="carousel-item"><img src="images/WebApp Landing.png" alt="slide 5"></div>
-						<div class="carousel-item"><img src="images/Runner.png" alt="slide 6"></div>
-					</div>
+							<div class="carousel-item"><img src="images/WebApp Landing.png" alt="slide 1" loading="lazy" decoding="async"></div>
+							<div class="carousel-item"><img src="images/Runner.png" alt="slide 2" loading="lazy" decoding="async"></div>
+							<div class="carousel-item"><img src="images/QBtogether.png" alt="slide 3" loading="lazy" decoding="async"></div>
+							<div class="carousel-item"><img src="images/drakejump.png" alt="slide 4" loading="lazy" decoding="async"></div>
+							<div class="carousel-item"><img src="images/WebApp Landing.png" alt="slide 5" loading="lazy" decoding="async"></div>
+							<div class="carousel-item"><img src="images/Runner.png" alt="slide 6" loading="lazy" decoding="async"></div>
+						</div>
 					<button class="carousel-prev" aria-label="Previous">◀</button>
 					<button class="carousel-next" aria-label="Next">▶</button>
 					<div class="carousel-dots"></div>
@@ -263,6 +263,6 @@
 		<a class="btn btn-ghost" href="#">Contact sales</a>
 	</div>
 
-	<script src="js/app.js"></script>
+	<script defer src="js/app.js"></script>
 </body>
 </html>
