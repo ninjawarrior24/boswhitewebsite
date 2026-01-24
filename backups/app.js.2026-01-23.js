@@ -1,3 +1,5 @@
+// Backup of js/app.js — 2026-01-23
+
 // app.js — clean single-file implementation
 document.addEventListener('DOMContentLoaded', function(){
   // year
