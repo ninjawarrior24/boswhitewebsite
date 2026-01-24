@@ -4,14 +4,24 @@
   --bg:#ffffff;
   --card:#f8fafb;
 }
+/* ------------------------------------------------------------------
+   Stylesheet organization
+   - Variables and reset rules
+   - Comments added for clarity; styles preserved to avoid visual change
+------------------------------------------------------------------- */
 /* avoid horizontal scrolling caused by oversized elements/transforms */
 html,body{overflow-x:hidden}
 *{box-sizing:border-box}
-body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;color:#0f172a;background:var(--bg);-webkit-font-smoothing:antialiased}
+/* Base typography and background color */
 body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;color:#0f172a;background:var(--bg);-webkit-font-smoothing:antialiased;font-weight:400}
 .content-paragraphs p{margin:0}
 .content-paragraphs p{color:var(--muted);font-size:18px;line-height:1.6;max-width:760px;margin:0 auto 18px}
 .container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* ------------------------------------------------------------------
+  Navigation / Header
+  - Primary site navigation sits over the hero on large screens.
+------------------------------------------------------------------- */
 .nav{border-bottom:0;background:transparent;position:absolute;left:0;right:0;top:0;z-index:60}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
 .brand{display:flex;align-items:center}
@@ -28,6 +38,11 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;color:#0f1
 .btn-outline{background:transparent;border:1px solid #e6e6ef;color:var(--muted)}
 .nav-toggle{display:none;background:transparent;border:0;font-size:20px}
 
+/* ------------------------------------------------------------------
+  Hero / Masthead
+  - Large visual hero with background image and primary CTA.
+------------------------------------------------------------------- */
+
 .hero{padding:84px 0 240px;min-height:520px;background-image: url('../images/bluyel.png');background-position: center right;background-repeat: no-repeat;background-size: cover;background-color:var(--bg);display:flex;align-items:center;position:relative;overflow:visible}
 .hero .hero-inner{position:static;z-index:4;justify-content:flex-start}
 
@@ -39,6 +54,9 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;color:#0f1
 .hero-box .hero-title{color:#ffffff;text-shadow:0 6px 18px rgba(2,6,23,0.30)}
 .hero-box .hero-sub{color:#ffffff;text-shadow:none;font-size:18px;line-height:1.6}
 
+/* ------------------------------------------------------------------
+  Section: general content blocks (dividers, titles, leads)
+------------------------------------------------------------------- */
 /* dedicated slanted divider between sections (cuts the bottom of the hero image) */
 .slant-divider{height:240px;margin-top:-40px;background:var(--bg);transform:skewY(-6deg);transform-origin:top left;box-shadow:0 18px 40px rgba(15,23,42,0.06);position:relative;z-index:2}
 .slant-divider::before{content:"";position:absolute;left:0;right:0;top:0;bottom:0;pointer-events:none}
@@ -67,7 +85,11 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;color:#0f1
 .drake-content{text-align:left;margin-top:20px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:28px}
 .drake-copy-box{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 12px 30px rgba(3,43,86,0.06);max-width:520px;flex:1}
 .drake-copy{margin:0;color:#475569;font-size:16px;line-height:1.45}
-.drake-subtitle{margin-top:0;font-size:56px;color:#032b56;font-weight:900;position:relative;line-height:0.95;text-shadow:0 6px 18px rgba(3,43,86,0.18);letter-spacing:0.5px}
+
+/* ------------------------------------------------------------------
+  Drake / Metric showcase
+  - Large numeric display with reflected characters for a visual effect.
+------------------------------------------------------------------- */
 .drake-subtitle{margin-top:0;font-size:56px;color:#032b56;font-weight:700;position:relative;line-height:0.95;text-shadow:0 6px 18px rgba(3,43,86,0.18);letter-spacing:0.5px}
 
 /* Per-character reflection: each letter has its own mirrored ::after, allowing fine control */
@@ -100,6 +122,7 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;color:#0f1
 /* computers section */
 .computers{background:transparent;padding:60px 0}
 .computers .section-title,.computers .section-lead{text-align:center;margin-left:auto;margin-right:auto}
+/* Computers section styles follow */
 .computers-media{text-align:center;margin-top:28px}
 .webapplanding-image{display:block;margin:20px auto;max-width:1100px;width:95%;height:auto;border-radius:8px;object-fit:contain}
 

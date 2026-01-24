@@ -4,9 +4,54 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>BeOne Sports — Payments & Platform</title>
-	<link rel="stylesheet" href="css/styles.css">
+	<!-- Load critical CSS non-blocking: preload then apply, with noscript fallback -->
+	<link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+
+	<!-- Preload critical images used in the hero and social previews -->
+	<link rel="preload" as="image" href="/images/bluyel.png">
+	<link rel="preload" as="image" href="/images/WebApp%20Landing.png">
+	<link rel="preload" as="image" href="/images/beonelogo.webp">
+
+	<!-- SEO: concise description, robots and canonical -->
+	<meta name="description" content="BeOne Sports — mobile computer vision for sports training. Immediate athlete insights, coach tools, and integrated athlete management.">
+	<meta name="robots" content="index,follow" />
+	<link rel="canonical" href="/" />
+
+	<!-- Open Graph / Social: improves sharing previews -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="BeOne Sports — Mobile computer vision for sports training" />
+	<meta property="og:description" content="BeOne Sports provides instant movement insights for athletes and coaches — no sensors required." />
+	<meta property="og:image" content="/images/WebApp%20Landing.png" />
+	<meta property="og:url" content="/" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="BeOne Sports — Mobile computer vision for sports training" />
+	<meta name="twitter:description" content="Instant athlete feedback, coach tools, and team insights." />
+	<meta name="twitter:image" content="/images/WebApp%20Landing.png" />
+
+	<!-- Security: basic Content Security Policy (modify for your production domain as needed) -->
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; media-src 'self' https:; frame-ancestors 'self'; base-uri 'self'; form-action 'self';">
+
+	<!-- Structured data (JSON-LD) for basic Organization/Website SEO -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Organization",
+	  "name": "BeOne Sports",
+	  "url": "/",
+	  "logo": "/images/beonelogo.webp"
+	}
+	</script>
+
 </head>
 <body>
+	<!-- Page structure comments:
+	     - Header: primary navigation & brand
+	     - Main: primary content sections (hero, features, media)
+	     - Footer: site links and legal
+	     These comments are purely informational and do not affect layout. -->
 	<header class="nav">
 		<div class="container nav-inner">
 			<a class="brand" href="/">
@@ -23,6 +68,7 @@
 		</div>
 	</header>
 
+	<!-- Main content begins -->
 	<main>
 		<section class="hero">
 			<div class="container hero-inner">
@@ -199,6 +245,7 @@
 		</section>
 	</main>
 
+	<!-- Footer: legal links, copyright -->
 	<footer class="site-footer">
 		<div class="container footer-inner">
 			<div>© <span id="year"></span> BeOne Sports</div>
