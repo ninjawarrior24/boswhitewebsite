@@ -3,7 +3,7 @@
 This is a lightweight, local demo homepage inspired by Stripe's layout and interactions. It uses your requested branding:
 
 - Sitename: BeOne Sports
-- Logo: `images/beonelogo.webp` (placeholder expected in `images`)
+- Logo: `images/nobglog.png` (placeholder expected in `images`)
 - Color: clean white + punchy accent
 - Font: Helvetica Neue (system fallback)
 

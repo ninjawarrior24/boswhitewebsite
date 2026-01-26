@@ -1,9 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>BeOne Sports — Payments & Platform</title>
+<!DOCTYPE html><html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>BeOne Sports — Payments &amp; Platform</title>
 	<!-- Load critical CSS non-blocking: preload then apply, with noscript fallback -->
 	<link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="css/styles.css"></noscript>
@@ -11,25 +9,25 @@
 	<!-- Preload critical images used in the hero and social previews -->
 	<link rel="preload" as="image" href="/images/bluyel.png">
 	<link rel="preload" as="image" href="/images/WebApp%20Landing.png">
-	<link rel="preload" as="image" href="/images/beonelogo.webp">
+	<link rel="preload" as="image" href="/images/nobglog.png">
 
 	<!-- SEO: concise description, robots and canonical -->
 	<meta name="description" content="BeOne Sports — mobile computer vision for sports training. Immediate athlete insights, coach tools, and integrated athlete management.">
-	<meta name="robots" content="index,follow" />
-	<link rel="canonical" href="/" />
+	<meta name="robots" content="index,follow">
+	<link rel="canonical" href="/">
 
 	<!-- Open Graph / Social: improves sharing previews -->
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="BeOne Sports — Mobile computer vision for sports training" />
-	<meta property="og:description" content="BeOne Sports provides instant movement insights for athletes and coaches — no sensors required." />
-	<meta property="og:image" content="/images/WebApp%20Landing.png" />
-	<meta property="og:url" content="/" />
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="BeOne Sports — Mobile computer vision for sports training">
+	<meta property="og:description" content="BeOne Sports provides instant movement insights for athletes and coaches — no sensors required.">
+	<meta property="og:image" content="/images/WebApp%20Landing.png">
+	<meta property="og:url" content="/">
 
 	<!-- Twitter Card -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="BeOne Sports — Mobile computer vision for sports training" />
-	<meta name="twitter:description" content="Instant athlete feedback, coach tools, and team insights." />
-	<meta name="twitter:image" content="/images/WebApp%20Landing.png" />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="BeOne Sports — Mobile computer vision for sports training">
+	<meta name="twitter:description" content="Instant athlete feedback, coach tools, and team insights.">
+	<meta name="twitter:image" content="/images/WebApp%20Landing.png">
 
 	<!-- Security: basic Content Security Policy (modify for your production domain as needed) -->
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; media-src 'self' https:; frame-ancestors 'self'; base-uri 'self'; form-action 'self';">
@@ -41,7 +39,7 @@
 	  "@type": "Organization",
 	  "name": "BeOne Sports",
 	  "url": "/",
-	  "logo": "/images/beonelogo.webp"
+	"logo": "/images/nobglog.png"
 	}
 	</script>
 
@@ -55,7 +53,11 @@
 	<header class="nav">
 		<div class="container nav-inner">
 			<a class="brand" href="/">
-				<img src="images/beonelogo.webp" alt="BeOne Sports" class="brand-logo" decoding="async">
+				<picture>
+<source type="image/avif" srcset="images/nobglog.png">
+<source type="image/webp" srcset="images/nobglog.png">
+<img src="images/nobglog.png" alt="BeOne Sports" class="brand-logo" decoding="async">
+</picture>
 			</a>
 			<nav class="nav-links" id="navLinks">
 				<a href="#product">Product</a>
@@ -71,19 +73,25 @@
 	<!-- Main content begins -->
 	<main>
 		<section class="hero">
+			<div class="promo-banner" role="status" aria-label="Winter discount">25% off Winter Discount! Start now!</div>
 			<div class="container hero-inner">
 				<div class="hero-box">
-					<h1 class="hero-title"><span>Mobile</span> <span>computer</span> <span>vision</span> <span>for</span> <span>sports</span> <span>training</span></h1>
-					<p class="hero-sub">Join the leading, sports training platform to Hit Your MAX! BeONE offers cutting-edge feedback for athletes & coaches.</p>
-					
+					<h1 class="hero-title">
+						<span class="line">Mobile</span>
+						<span class="line">Computer</span>
+						<span class="line">vision for</span>
+						<span class="line"><span class="navy">sports</span> <span class="navy">training</span></span>
+					</h1>
+					<p class="hero-sub">Join the leading, sports training platform to Hit Your MAX! BeONE offers cutting-edge feedback for athletes &amp; coaches.</p>
+
 				</div>
+				</div>
+			
 				</div>
 			</div>
+			<!-- slanted divider moved inside hero to sit flush with hero bottom -->
+			<div class="slant-divider" aria-hidden="true"></div>
 		</section>
-
-
-
-		<div class="slant-divider" aria-hidden="true"></div>
 
 		<section id="drakedive" class="drakedive">
 			<div class="container">
@@ -91,7 +99,11 @@
 
 				<div class="drake-media">
 					<div class="drake-image-wrap">
-						<img src="images/drakejump.png" alt="DrakeDive image" class="drake-image" loading="lazy" decoding="async">
+						<picture>
+<source type="image/avif" srcset="images/drakejump.avif">
+<source type="image/webp" srcset="images/drakejump.webp">
+<img src="images/drakejump.png" alt="DrakeDive image" class="drake-image" loading="lazy" decoding="async">
+</picture>
 					</div>
 					<div class="drake-content">
 						<h3 class="drake-subtitle" aria-label="165+ Million">
@@ -119,11 +131,15 @@
 		<section id="computers" class="computers">
 			<div class="container">
 				<h2 class="section-title">The simplest, fastest and most versatile sports-tech</h2>
-				<p class="section-lead">BeONE is built for fast-paced, competitive environments. Designed for on-field and off-field training & feedback. Athletes and coaches gain immediate insights on Metrics that Matter™</p>
+				<p class="section-lead">BeONE is built for fast-paced, competitive environments. Designed for on-field and off-field training &amp; feedback. Athletes and coaches gain immediate insights on Metrics that Matter™</p>
 
 				<div class="computers-media">
 					<div class="webapp-wrap">
-						<img src="images/WebApp Landing.png" alt="Web app landing" class="webapplanding-image" loading="lazy" decoding="async">
+						<picture>
+<source type="image/avif" srcset="images/WebApp Landing.avif">
+<source type="image/webp" srcset="images/WebApp Landing.webp">
+<img src="images/WebApp Landing.png" alt="Web app landing" class="webapplanding-image" loading="lazy" decoding="async">
+</picture>
 					</div>
 				</div>
 			</div>
@@ -132,9 +148,13 @@
 		<section id="ams" class="ams">
 			<div class="container">
 				<h2 class="section-title">A fully integrated athlete management system (AMS)</h2>
-				<p class="section-lead">Manage your organization’s coaches & athletes simply. Assign individual training outcomes remotely and generate club-level insights and performance trends.</p>
+				<p class="section-lead">Manage your organization’s coaches &amp; athletes simply. Assign individual training outcomes remotely and generate club-level insights and performance trends.</p>
 				<div class="ams-media">
-					<img src="images/Runner.png" alt="AMS illustration" class="ams-image" loading="lazy" decoding="async">
+					<picture>
+<source type="image/avif" srcset="images/Runner.avif">
+<source type="image/webp" srcset="images/Runner.webp">
+<img src="images/Runner.png" alt="AMS illustration" class="ams-image" loading="lazy" decoding="async">
+</picture>
 				</div>
 			</div>
 		</section>
@@ -162,10 +182,14 @@
 
 				<div class="videos-grid">
 					<div class="videos-media">
-						<img src="images/Runner.png" alt="Runner image" class="videos-image" loading="lazy" decoding="async">
+						<picture>
+<source type="image/avif" srcset="images/Runner.avif">
+<source type="image/webp" srcset="images/Runner.webp">
+<img src="images/Runner.png" alt="Runner image" class="videos-image" loading="lazy" decoding="async">
+</picture>
 					</div>
 					<div class="videos-player">
-						<video class="video-player" controls preload="metadata" playsinline poster="/images/WebApp%20Landing.png">
+						<video class="video-player" controls="" preload="metadata" playsinline="" poster="/images/WebApp%20Landing.png">
 							<source src="videos/braodjump.mov" type="video/quicktime">
 							Your browser does not support the video tag.
 						</video>
@@ -173,10 +197,26 @@
 				</div>
 
 					<div class="video-logos">
-						<img src="images/football.png" alt="Football" class="logo" loading="lazy" decoding="async">
-						<img src="images/basketball.png" alt="Basketball" class="logo" loading="lazy" decoding="async">
-						<img src="images/soccer.png" alt="Soccer" class="logo" loading="lazy" decoding="async">
-						<img src="images/baseball.png" alt="Baseball" class="logo" loading="lazy" decoding="async">
+						<picture>
+<source type="image/avif" srcset="images/football.avif">
+<source type="image/webp" srcset="images/football.webp">
+<img src="images/football.png" alt="Football" class="logo" loading="lazy" decoding="async">
+</picture>
+						<picture>
+<source type="image/avif" srcset="images/basketball.avif">
+<source type="image/webp" srcset="images/basketball.webp">
+<img src="images/basketball.png" alt="Basketball" class="logo" loading="lazy" decoding="async">
+</picture>
+						<picture>
+<source type="image/avif" srcset="images/soccer.avif">
+<source type="image/webp" srcset="images/soccer.webp">
+<img src="images/soccer.png" alt="Soccer" class="logo" loading="lazy" decoding="async">
+</picture>
+						<picture>
+<source type="image/avif" srcset="images/baseball.avif">
+<source type="image/webp" srcset="images/baseball.webp">
+<img src="images/baseball.png" alt="Baseball" class="logo" loading="lazy" decoding="async">
+</picture>
 					</div>
 			</div>
 		</section>
@@ -188,18 +228,26 @@
 
 				<div class="gs-icons">
 					<div class="gs-icon">
-						<img src="images/athlete.png" alt="Athlete" class="gs-image" loading="lazy" decoding="async">
+						<picture>
+<source type="image/avif" srcset="images/athlete.avif">
+<source type="image/webp" srcset="images/athlete.webp">
+<img src="images/athlete.png" alt="Athlete" class="gs-image" loading="lazy" decoding="async">
+</picture>
 						<p>Athletes</p>
 					</div>
 					<div class="gs-icon">
-						<img src="images/coach.png" alt="Coach" class="gs-image" loading="lazy" decoding="async">
+						<picture>
+<source type="image/avif" srcset="images/coach.avif">
+<source type="image/webp" srcset="images/coach.webp">
+<img src="images/coach.png" alt="Coach" class="gs-image" loading="lazy" decoding="async">
+</picture>
 						<p>Coaches</p>
 					</div>
 				</div>
 
 				<div class="gs-feature">
 					<div class="gs-feature-icon">
-						<svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v20" stroke="#0b1220" stroke-width="1.5" stroke-linecap="round"/><path d="M2 12h20" stroke="#0b1220" stroke-width="1.5" stroke-linecap="round"/></svg>
+						<svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v20" stroke="#0b1220" stroke-width="1.5" stroke-linecap="round"></path><path d="M2 12h20" stroke="#0b1220" stroke-width="1.5" stroke-linecap="round"></path></svg>
 					</div>
 					<div class="gs-feature-copy">
 						<p>Create individual or team profiles, connected with coaches</p>
@@ -213,12 +261,36 @@
 				<h2 class="section-title">Take it from them...</h2>
 				<div class="carousel" data-autoplay="true" data-interval="4000">
 					<div class="carousel-track">
-							<div class="carousel-item"><img src="images/WebApp Landing.png" alt="slide 1" loading="lazy" decoding="async"></div>
-							<div class="carousel-item"><img src="images/Runner.png" alt="slide 2" loading="lazy" decoding="async"></div>
-							<div class="carousel-item"><img src="images/QBtogether.png" alt="slide 3" loading="lazy" decoding="async"></div>
-							<div class="carousel-item"><img src="images/drakejump.png" alt="slide 4" loading="lazy" decoding="async"></div>
-							<div class="carousel-item"><img src="images/WebApp Landing.png" alt="slide 5" loading="lazy" decoding="async"></div>
-							<div class="carousel-item"><img src="images/Runner.png" alt="slide 6" loading="lazy" decoding="async"></div>
+							<div class="carousel-item"><picture>
+<source type="image/avif" srcset="images/WebApp Landing.avif">
+<source type="image/webp" srcset="images/WebApp Landing.webp">
+<img src="images/WebApp Landing.png" alt="slide 1" loading="lazy" decoding="async">
+</picture></div>
+							<div class="carousel-item"><picture>
+<source type="image/avif" srcset="images/Runner.avif">
+<source type="image/webp" srcset="images/Runner.webp">
+<img src="images/Runner.png" alt="slide 2" loading="lazy" decoding="async">
+</picture></div>
+							<div class="carousel-item"><picture>
+<source type="image/avif" srcset="images/QBtogether.avif">
+<source type="image/webp" srcset="images/QBtogether.webp">
+<img src="images/QBtogether.png" alt="slide 3" loading="lazy" decoding="async">
+</picture></div>
+							<div class="carousel-item"><picture>
+<source type="image/avif" srcset="images/drakejump.avif">
+<source type="image/webp" srcset="images/drakejump.webp">
+<img src="images/drakejump.png" alt="slide 4" loading="lazy" decoding="async">
+</picture></div>
+							<div class="carousel-item"><picture>
+<source type="image/avif" srcset="images/WebApp Landing.avif">
+<source type="image/webp" srcset="images/WebApp Landing.webp">
+<img src="images/WebApp Landing.png" alt="slide 5" loading="lazy" decoding="async">
+</picture></div>
+							<div class="carousel-item"><picture>
+<source type="image/avif" srcset="images/Runner.avif">
+<source type="image/webp" srcset="images/Runner.webp">
+<img src="images/Runner.png" alt="slide 6" loading="lazy" decoding="async">
+</picture></div>
 						</div>
 					<button class="carousel-prev" aria-label="Previous">◀</button>
 					<button class="carousel-next" aria-label="Next">▶</button>
@@ -233,12 +305,16 @@
 				<div class="hp-content">
 					<ul class="hp-list">
 						<li>Mobile motion capture, no wearables,sensors or installations</li>
-						<li>Rankings & benchmarks from professional athletes</li>
+						<li>Rankings &amp; benchmarks from professional athletes</li>
 						<li>Systematic data, individual training insights and data</li>
 					</ul>
 					<a class="btn hp-cta" href="#">Join BeOne</a>
 					<div class="hp-logo">
-						<img src="images/beonelogo.webp" alt="BeOne Sports logo">
+						<picture>
+<source type="image/avif" srcset="images/nobglog.png">
+<source type="image/webp" srcset="images/nobglog.png">
+<img src="images/nobglog.png" alt="BeOne Sports logo">
+</picture>
 					</div>
 				</div>
 			</div>
@@ -263,6 +339,7 @@
 		<a class="btn btn-ghost" href="#">Contact sales</a>
 	</div>
 
-	<script defer src="js/app.js"></script>
-</body>
-</html>
+	<script defer="" src="js/app.js"></script>
+
+
+</body></html>
