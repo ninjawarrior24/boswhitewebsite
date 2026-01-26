@@ -380,7 +380,7 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;color:#0f1
   .drake-copy-box{width:100%;max-width:100%}
   .hero-box{left:8vw;width:50%}
   .hero-title{font-size:48px}
-}
+
 
 @media (max-width:900px){
   .hero{background-position:top right;background-size:140%}

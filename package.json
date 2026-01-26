@@ -6,7 +6,7 @@
     "build:images": "node scripts/convert-images.js",
     "build:css": "postcss css/styles.css -o css/styles.min.css",
     "build:js": "terser js/app.js -o js/app.min.js --compress --mangle",
-    "build:critical": "critical index.html --inline --minify --width=1300 --height=900",
+    "build:critical": "critical index.html --inline --width=1300 --height=900",
     "build:sw": "node scripts/build-sw.js",
     "build:update-html": "node scripts/update-html-after-build.js",
     "build": "npm run build:images && npm run build:css && npm run build:js && npm run build:critical && npm run build:sw && npm run build:update-html",
