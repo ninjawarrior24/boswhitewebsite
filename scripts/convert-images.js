@@ -26,7 +26,8 @@ async function convertImage(file) {
 }
 
 function isImageFile(f) {
-  return /\.(png|jpg|jpeg|webp)$/i.test(f);
+  // Only convert source raster images; skip already-generated webp/avif files
+  return /\.(png|jpg|jpeg)$/i.test(f);
 }
 
 async function processAll() {

@@ -1,8 +1,5 @@
 
 {
-  "builds": [
-    { "src": "index.html", "use": "@vercel/static" }
-  ],
   "headers": [
     {
       "source": "/(.*)\\.(js|css|svg|jpg|jpeg|png|webp|avif)$",
